@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>from data Sheets</title>
+  <style type="text/css">
+    * {
+      margin: 0;
+
+    }
+
+    body {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      background-image: url("Prosanta.png");
+      justify-content: center;
+      background-color: #1d2060;
+
+
+    }
+
+    form {
+      width: 440px;
+      height: auto;
+
+      padding: 80px;
+      border-radius: 40px;
+      background-color: #800513;
+
+    }
+
+    .text-center {
+      font-family: Algerian;
+      font-size: x-large;
+      color: rgb(236, 236, 6);
+    }
+
+    .text-center:hover {
+      color: rgb(249, 248, 200);
+    }
+  </style>
+</head>
+
+<body>
+
+  <form name="submit-to-google-sheet">
+    <h2 class="text-center">User Kiln Logbook</h2>
+
+    <label>Name</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <div class="mb-3">
+
+      <div class="mb-3">
+        <label for="birthday">Date</label>
+        <input type="date" id="birthday" name="date">
+      </div><br>
+      <label for="shift">Shift</label>
+      <select name="shift" id="shift" class="form-select">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+
+      </select><br><br>
+      <label for="kiln">Kiln</label>
+      <select name="kiln" id="kiln" class="form-select">
+        <option value="kiln-1">Kiln-1</option>
+        <option value="kiln-2">kiln-2</option>
+        <option value="kiln-3">kiln-3</option>
+
+      </select>
+
+    </div><br>
+
+    <h2 class="text-center">Kiln-2 Temperature</h2>
+    <label>Top Max Temperature</label><br>
+    <input type="Top Max Temperature" name="Top Max Temperature" required><br>
+
+    <label>Down Max Temperature</label><br>
+    <input type="Down Max Temperature" name="Down Max Temperature" required><br>
+
+
+    <label>Kiln Cycle</label><br>
+    <input type="Kiln cycle" name="kiln cycle" required><br>
+    <label>Production Size </label><br>
+    <input type="production size" name="production size" required><br>
+
+
+    <br>
+
+    <h2 class="text-center">Conditions</h2>
+
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="tnc" name="checkbox" />
+      <table for="tnc"> Rapid Cooling Pipes Conditions Serves Side</table>
+    </div>
+    <label for="1st siegment">1st Sigment Top Serves Side</label>
+    <select name="1st siegment top Serves Side" id="1st siegment" class="form-select">
+      <option value="Closs">Closs</option>
+      <option value="1 round">1 round Open</option>
+      <option value="2 round">2 round Open</option>
+      <option value="3 round">3 round Open</option>
+      <option value="4 round">4 round Open</option>
+      <option value="5 round">5 round Open</option>
+      <option value="6 round">6 round Open</option>
+      <option value="7 round">7 round Open</option>
+      <option value="8 round">8 round Open</option>
+      <option value="9 round">9 round Open</option>
+      <option value="10 round">10 round Open</option>
+      <option value="11 round">11 round Open</option>
+      <option value="12 round">12 round Open</option>
+      <option value="13 round">13 round Open</option>
+      <option value="14 round">14 round Open</option>
+      <option value="15 round">15 round Open</option>
+      <option value="full open">Full Open</option>
+    </select><br>
+    <label for="2nd siegment">2nd Sigment Top Serves Side</label>
+    <select name="2nd siegment top Serves Side" id="2nd siegment" class="form-select">
+      <option value="Closs">Closs</option>
+      <option value="1 round">1 round Open</option>
+      <option value="2 round">2 round Open</option>
+      <option value="3 round">3 round Open</option>
+      <option value="4 round">4 round Open</option>
+      <option value="5 round">5 round Open</option>
+      <option value="6 round">6 round Open</option>
+      <option value="7 round">7 round Open</option>
+      <option value="8 round">8 round Open</option>
+      <option value="9 round">9 round Open</option>
+      <option value="10 round">10 round Open</option>
+      <option value="11 round">11 round Open</option>
+      <option value="12 round">12 round Open</option>
+      <option value="13 round">13 round Open</option>
+      <option value="14 round">14 round Open</option>
+      <option value="15 round">15 round Open</option>
+      <option value="Full Open">Full Open</option>
+
+    </select><br><label for="1st siegment bottom">1st Sigment Bottom Serves Side</label>
+    <select name="1st siegment bottom Serves Side" id="1st siegment bottom" class="form-select">
+      <option value="Closs">Closs</option>
+      <option value="1 round">1 round Open</option>
+      <option value="2 round">2 round Open</option>
+      <option value="3 round">3 round Open</option>
+      <option value="4 round">4 round Open</option>
+      <option value="5 round">5 round Open</option>
+      <option value="6 round">6 round Open</option>
+      <option value="7 round">7 round Open</option>
+      <option value="8 round">8 round Open</option>
+      <option value="9 round">9 round Open</option>
+      <option value="10 round">10 round Open</option>
+      <option value="11 round">11 round Open</option>
+      <option value="12 round">12 round Open</option>
+      <option value="13 round">13 round Open</option>
+      <option value="14 round">14 round Open</option>
+      <option value="15 round">15 round Open</option>
+      <option value="Full Open">Full Open</option>
+    </select><br>
+    <label for="2nd siegment bottom">2nd Sigment Bottom Serves Side</label>
+    <select name="2nd siegment bottom Serves Side" id="2nd siegment bottom" class="form-select">
+      <option value="Closs">Closs</option>
+      <option value="1 round">1 round Open</option>
+      <option value="2 round">2 round Open</option>
+      <option value="3 round">3 round Open</option>
+      <option value="4 round">4 round Open</option>
+      <option value="5 round">5 round Open</option>
+      <option value="6 round">6 round Open</option>
+      <option value="7 round">7 round Open</option>
+      <option value="8 round">8 round Open</option>
+      <option value="9 round">9 round Open</option>
+      <option value="10 round">10 round Open</option>
+      <option value="11 round">11 round Open</option>
+      <option value="12 round">12 round Open</option>
+      <option value="13 round">13 round Open</option>
+      <option value="14 round">14 round Open</option>
+      <option value="15 round">15 round Open</option>
+      <option value="Full Open">Full Open</option>
+
+    </select><br><br>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="tnc" />
+      <table for="tnc"> Rapid Cooling Pipes Conditions Serves Side</table>
+    </div>
+    <label for="1st siegment top rod push">1st Sigment Top Rod Push Serves Side</label>
+    <select name="1st siegment top rod push Serves Side" id="1st siegment rod push" class="form-select">
+      <option value="No">No</option>
+      <option value="1 Rod Push">1 Rod Push</option>
+      <option value="2 Rod Push">2 Rod Push</option>
+      <option value="3 Rod Push">3 Rod Push</option>
+      <option value="4 Rod Push">4 Rod Push</option>
+      <option value="5 Rod Push">5 Rod Push</option>
+
+    </select><br>
+    <label for="2nd siegment top rod push">2nd Sigment Top Rod Push Serves Side</label>
+    <select name="2nd siegment top rod push Serves Side" id="2nd siegment rod push" class="form-select">
+      <option value="No">No</option>
+      <option value="1 rod push">1 Rod Push</option>
+      <option value="2 rod push">2 Rod Push</option>
+      <option value="3 rod push">3 Rod Push</option>
+      <option value="4 rod push">4 Rod Push</option>
+      <option value="5 round">5 Rod Push</option>
+
+
+    </select><br><label for="fast siegment bottom rod push">1st Sigment Bottom Rod Push Serves Side</label>
+    <select name="fast siegment bottom rod push Serves Side" id="fast siegment bottom rod push" class="form-select">
+      <option value="No">No</option>
+      <option value="1 rod push">1 Rod Push</option>
+      <option value="2 rod push">2 Rod Push</option>
+      <option value="3 rod push">3 Rod Push</option>
+      <option value="4 rod push">4 Rod Push</option>
+      <option value="5 rod push">5 Rod Push</option>
+
+    </select><br>
+    <label for="second siegment bottom rod push">2nd Sigment Bottom Rod Push Serves Side</label>
+    <select name="2nd siegment bottom rod push Serves Side" id="second siegment bottom rod push" class="form-select">
+      <option value="No">No</option>
+      <option value="1 rod push">1 Rod Push</option>
+      <option value="2 rod push">2 Rod Push</option>
+      <option value="3 rod push">3 Rod Push</option>
+      <option value="4 rod push">4 Rod Push</option>
+      <option value="5 rod push">5 Rod Push</option>
+
+    </select><br><br>
+
+
+
+
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="tnc" />
+      <table for="tnc">Rapid cooling Pipes Conditions Drive Side</table>
+
+    </div>
+
+    <label for="fast siegment">1st Sigment Top Drive Side</label>
+    <select name="Fast Siegment Top Drive Side" id="fast siegment" class="form-select">
+      <option value="Closs">Closs</option>
+      <option value="1 round">1 round Open</option>
+      <option value="2 round">2 round Open</option>
+      <option value="3 round">3 round Open</option>
+      <option value="4 round">4 round Open</option>
+      <option value="5 round">5 round Open</option>
+      <option value="6 round">6 round Open</option>
+      <option value="7 round">7 round Open</option>
+      <option value="8 round">8 round Open</option>
+      <option value="9 round">9 round Open</option>
+      <option value="10 round">10 round Open</option>
+      <option value="11 round">11 round Open</option>
+      <option value="12 round">12 round Open</option>
+      <option value="13 round">13 round Open</option>
+      <option value="14 round">14 round Open</option>
+      <option value="15 round">15 round Open</option>
+      <option value="Full Open">Full Open</option>
+    </select><br>
+    <label for="second siegment">2nd Sigment Top Drive Side</label>
+    <select name="second siegment Top Drive Side" id="second siegment" class="form-select">
+      <option value="Closs">Closs</option>
+      <option value="1 round">1 round Open</option>
+      <option value="2 round">2 round Open</option>
+      <option value="3 round">3 round Open</option>
+      <option value="4 round">4 round Open</option>
+      <option value="5 round">5 round Open</option>
+      <option value="6 round">6 round Open</option>
+      <option value="7 round">7 round Open</option>
+      <option value="8 round">8 round Open</option>
+      <option value="9 round">9 round Open</option>
+      <option value="10 round">10 round Open</option>
+      <option value="11 round">11 round Open</option>
+      <option value="12 round">12 round Open</option>
+      <option value="13 round">13 round Open</option>
+      <option value="14 round">14 round Open</option>
+      <option value="15 round">15 round Open</option>
+      <option value="Full Open">Full Open</option>
+
+    </select><br><label for="fast siegment bottom">1st Sigment Bottom Drive Side</label>
+    <select name="fast siegment bottom Drive Side" id="fast siegment bottom" class="form-select">
+      <option value="Closs">Closs</option>
+      <option value="1 round">1 round Open</option>
+      <option value="2 round">2 round Open</option>
+      <option value="3 round">3 round Open</option>
+      <option value="4 round">4 round Open</option>
+      <option value="5 round">5 round Open</option>
+      <option value="6 round">6 round Open</option>
+      <option value="7 round">7 round Open</option>
+      <option value="8 round">8 round Open</option>
+      <option value="9 round">9 round Open</option>
+      <option value="10 round">10 round Open</option>
+      <option value="11 round">11 round Open</option>
+      <option value="12 round">12 round Open</option>
+      <option value="13 round">13 round Open</option>
+      <option value="14 round">14 round Open</option>
+      <option value="15 round">15 round Open</option>
+      <option value="Full Open">Full Open</option>
+    </select><br>
+    <label for="second siegment bottom">2nd Sigment Bottom Drive Side</label>
+    <select name="second siegment bottom Drive Side" id="second siegment bottom" class="form-select">
+      <option value="Closs">Closs</option>
+      <option value="1 round">1 round Open</option>
+      <option value="2 round">2 round Open</option>
+      <option value="3 round">3 round Open</option>
+      <option value="4 round">4 round Open</option>
+      <option value="5 round">5 round Open</option>
+      <option value="6 round">6 round Open</option>
+      <option value="7 round">7 round Open</option>
+      <option value="8 round">8 round Open</option>
+      <option value="9 round">9 round Open</option>
+      <option value="10 round">10 round Open</option>
+      <option value="11 round">11 round Open</option>
+      <option value="12 round">12 round Open</option>
+      <option value="13 round">13 round Open</option>
+      <option value="14 round">14 round Open</option>
+      <option value="15 round">15 round Open</option>
+      <option value="Full Open">Full Open</option>
+
+    </select><br><br>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="tnc" />
+      <table for="tnc">Rapid cooling Pipes Conditions Drive Side</table>
+
+    </div>
+    <label for="fast siegment rod push">1st Sigment Top Rod Push Drive Side</label>
+    <select name="fast siegment rod push Drive Side" id="fast siegment rod push" class="form-select">
+      <option value="No">No</option>
+      <option value="1 Rod Push">1 Rod Push</option>
+      <option value="2 Rod Push">2 Rod Push</option>
+      <option value="3 Rod Push">3 Rod Push</option>
+      <option value="4 Rod Push">4 Rod Push</option>
+      <option value="5 Rod Push">5 Rod Push</option>
+
+    </select><br>
+    <label for="second siegment rod push">2nd Sigment Top Rod Push Drive Side</label>
+    <select name="second siegment rod push Drive Side" id="second siegment rod push" class="form-select">
+      <option value="No">No</option>
+      <option value="1 rod push">1 Rod Push</option>
+      <option value="2 rod push">2 Rod Push</option>
+      <option value="3 rod push">3 Rod Push</option>
+      <option value="4 rod push">4 Rod Push</option>
+      <option value="5 round">5 Rod Push</option>
+
+
+    </select><br><label for="fast siegment bottom rod push">1st Sigment Bottom Rod Push Drive Side</label>
+    <select name="fast siegment bottom rod push Drive Side" id="fast siegment bottom rod push" class="form-select">
+      <option value="No">No</option>
+      <option value="1 rod push">1 Rod Push</option>
+      <option value="2 rod push">2 Rod Push</option>
+      <option value="3 rod push">3 Rod Push</option>
+      <option value="4 rod push">4 Rod Push</option>
+      <option value="5 rod push">5 Rod Push</option>
+
+    </select><br>
+    <label for="second siegment bottom rod push">2nd Sigment Bottom Rod Push Drive Side</label>
+    <select name="second siegment bottom rod push Drive Side" id="second siegment bottom rod push" class="form-select">
+      <option value="No">No</option>
+      <option value="1 rod push">1 Rod Push</option>
+      <option value="2 rod push">2 Rod Push</option>
+      <option value="3 rod push">3 Rod Push</option>
+      <option value="4 rod push">4 Rod Push</option>
+      <option value="5 rod push">5 Rod Push</option>
+
+    </select><br><br>
+
+    <h2 class="text-center">Roller Change Conditions</h2><br>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="tnc" />
+      <table for="tnc">Roller Change </table><br>
+
+    </div>
+    <label><label>Roller Change Pes</label><br>
+      <input type="Roller Change Pes" name="roller change pes" required>
+    </label><br>
+    <label><label>Roller Broken Pes</label><br>
+      <input type="Roller Broken Pes" name="roller broken pes" required>
+    </label><br>
+    <label><label>Roller Granding Pes</label><br>
+      <input type="Roller Granding Pes" name="roller Granding pes" required>
+    </label><br>
+
+
+
+
+
+
+
+    <h2 class="text-center"> Kiln-2 Production</h2>
+
+    <label>Input</label><br>
+    <input type="input" name="input" required><br>
+    <label>Output</label><br>
+    <input type="output" name="output" required><br>
+    <label>Input Broken</label><br>
+    <input type="input broken" name="input broken" required><br>
+    <label>Output Broken</label><br>
+    <input type="output broken" name="output broken" required><br>
+    <label>Sample</label><br>
+    <input type="sample" name="sample" required><br>
+
+
+    <label>Kiln Gap time</label><br>
+    <input type="kiln gap time" name="kiln gap time" required><br>
+
+    <label>24 Hour Gas Report</label><br>
+    <input type="24 Hour Gas Report" name="24 hour gas report" required><br>
+
+
+
+
+    <label>Message</label><br>
+
+
+    <textarea name="message" cols="20" required></textarea><br><br>
+    <input type="submit" name="submit"><br>
+
+    <span id="success"></span>
+
+
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzkTXH98V5w2_BL5y2kfhtaJAYuoBIFmu-LLHh61wSV2SmEvju2g2NFZMJ_wVEuiYkd/exec';
+      const form = document.forms['submit-to-google-sheet']
+      const Success = document.getElementById('success');
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => {
+            Success.innerHTML = "data successfully submit";
+            setTimeout(function () {
+              Success.innerHTML = "";
+            }, 5000)
+            form.reset();
+
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+</body>
+
+</html>
